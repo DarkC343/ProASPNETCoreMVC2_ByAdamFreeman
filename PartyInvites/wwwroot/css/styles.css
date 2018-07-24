@@ -1,0 +1,30 @@
+﻿/* validation-summary-valid, validation-summary-errors, field-validation-valid, field-validation-error, input-validation-error are the
+    classes which can be redefined in order to style the validation areas in view pages
+*/
+
+.validation-summary-valid {
+    /* the divs are hide from the user when a validation has passed */
+    display: none;
+}
+
+.validation-summary-errors {
+    /* the divs are styled when a validation error has popped */
+    font-weight: bold;
+    color: #f00;
+}
+
+.field-validation-valid {
+    /* the fileds are hide from the user when a validation has passed */
+    display: none;
+}
+
+.field-validation-error {
+    /* the fileds are styled when a validation error has popped */
+    color: #f00;
+}
+
+.input-validation-error {
+    /* the inputs are styled when a validation error has popped */
+    border: 1px solid #f00;
+    background-color: #fee;
+}

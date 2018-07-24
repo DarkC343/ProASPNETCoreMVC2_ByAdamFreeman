@@ -1,0 +1,38 @@
+﻿@model PartyInvites.Models.GuestResponse
+@{
+    Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form asp-action="RsvpForm" method="post">
+        @* This is where the validation errors come up automatically from model. Refer to the styles.css to see classes that can be appled to style the view *@
+        <div asp-validation-summary="All"></div>
+        <p>
+            <label asp-for="Name">Name:</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="Email">Email:</label>
+            <input asp-for="Email" />
+        </p>
+        <p>
+            <label asp-for="Phone">Phone:</label>
+            <input asp-for="Phone" />
+        </p>
+        <p>
+            <label asp-for="WillAttend">Are you going to attend?</label>
+            <select asp-for="WillAttend">
+                <option value="">Choose an option</option>
+                <option value="true">Of course, Yes!</option>
+                <option value="false">No, I can't come</option>
+            </select>
+        </p>
+        <button type="submit">Submit RSVP</button>
+    </form>
+</body>
+</html>

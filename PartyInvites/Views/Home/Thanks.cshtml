@@ -1,0 +1,25 @@
+﻿@model PartyInvites.Models.GuestResponse
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Thank you @Model.Name!</h2>
+    @if (Model.WillAttend == true)
+    {
+        @:We are going to rock it! The drinks are already in fridge!
+    } else
+    {
+        @:Sorry to hear that you can't make it, but thank you to let us know.
+    }
+    <p>
+        Click <a asp-action="ListResponses">here</a> to see who's comming.
+    </p>
+</body>
+</html>
