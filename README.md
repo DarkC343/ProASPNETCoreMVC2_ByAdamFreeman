@@ -1,2 +1,3 @@
-# ProASPNETCoreMVC2_ByAdamFreeman
-Step by step examples with comments that could be helpful to everyone who reads the codes
+# Pro ASP.NET Core MVC 2
+Author: Adam Freeman
+Step by step covering examples of the book including comments where can be helpful to everyone who reads the codes
