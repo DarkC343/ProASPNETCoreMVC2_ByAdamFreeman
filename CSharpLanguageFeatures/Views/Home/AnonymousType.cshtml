@@ -1,0 +1,16 @@
+﻿@model IEnumerable<int>
+@{ Layout = null; }
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Anonymous Type</title>
+</head>
+<body>
+    <ul>
+        @foreach (int item in Model)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</body>
+</html>

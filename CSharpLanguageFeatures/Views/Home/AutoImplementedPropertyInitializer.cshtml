@@ -1,0 +1,16 @@
+﻿@model IEnumerable<string>
+@{ Layout = null; }
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Auto-Implemented Property Initializer</title>
+</head>
+<body>
+    <ul>
+        @foreach (var laptop in Model)
+        {
+            <li>@laptop</li>
+        }
+    </ul>
+</body>
+</html>

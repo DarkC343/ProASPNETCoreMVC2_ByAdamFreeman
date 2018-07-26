@@ -1,0 +1,16 @@
+﻿@model List<string>
+@{ Layout = null; }
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Null Conditional Operator</title>
+</head>
+<body>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</body>
+</html>

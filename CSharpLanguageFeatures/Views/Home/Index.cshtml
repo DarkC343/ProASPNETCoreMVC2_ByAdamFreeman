@@ -1,0 +1,18 @@
+﻿@* The type of the recieving object from controller should be assigned in the view page in order to show the content of it *@
+@model IEnumerable<string>
+@{ Layout = null; }
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Language Features</title>
+</head>
+<body>
+    @* Iterating through items in Enumerable<T> object and displaying the content *@
+    <ul>
+        @foreach (var s in Model)
+        {
+            <li>@s</li>
+        }
+    </ul>
+</body>
+</html>
